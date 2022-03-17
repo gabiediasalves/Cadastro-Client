@@ -1,4 +1,3 @@
-//'use strict'
 
 const openModal = () => document.getElementById('modal')
     .classList.add('active')
@@ -9,23 +8,11 @@ const closeModal = () => {
 }
 
 
-// const tempClient = {
-//     nome: "Luan",
-//     email: "Luan@gmail.com",
-//     celular: "3499541222",
-//     cidade: "Sao Paulo"
-// }
-
 //pega oq tem no banco de dados e transforma em json e armazena na var db client
 const getLocalStorage = () => JSON.parse(localStorage.getItem('db_client')) ?? [] //se for null, vazio retorna vazio                                                                             CREATE
 const setLocalStorage = (dbClient) => localStorage.setItem("db_client", JSON.stringify(dbClient))// envia um item pro banco - key, value & transforma em string pq banco n le object            CREATE
-// CRUP - create red update delete
 
-const deleteClient = (index) => {
-    const dbClient = readClient()
-    dbClient.splice(index, 1) //exclui 
-    setLocalStorage(dbClient) //atualiza o banco de dados
-}
+// CRUP - create read update delete
 
 const updateClient = (index, client) => {
     const dbClient = readClient()
@@ -81,8 +68,8 @@ const createRow = (client, index) => {
     <td>${client.celular}</td>
     <td>${client.cidade}</td>
     <td>
-        <button type="button" class="button green" id="edit-${index}">Editar</button>
-        <button type="button" class="button red" id="delete-${index}">Excluir</button>
+    <button type="button" class="button green" id="edit-${index}">Editar</button>
+    <button type="button" class="button red" id="delete-${index}">Excluir</button>
     </td>
     `
     document.querySelector('#tableClient>tbody').appendChild(newRow)
@@ -118,11 +105,19 @@ const editClient = (index) => {
     openModal()
 }
 
+//botao deletar
+const deleteClient = (index) => {
+    const dbClient = readClient()
+    dbClient.splice(index, 1) //exclui 
+    setLocalStorage(dbClient) //atualiza o banco de dados
+}
+
+//descobre qual botão está clicando e em qual cliente
 const editDelete = (event) => {
     if (event.target.type == 'button') {
-
+        
         const [action, index] = event.target.id.split('-')//transforma a var em array
-
+        
         if (action == 'edit') {
             editClient(index)
         } else {

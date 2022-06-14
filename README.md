@@ -28,5 +28,11 @@
 
 <br>
 
+## 📌 Objetivo
+- Aprender e seguir boas práticas de escrita em JavaScript
+- Aprender a fazer um CRUD 
+
+<br>
+
 #### 🔸Acesse o projeto <a href="https://gabiediasalves.github.io/Customer-Registration-CRUD/">clicando aqui</a>
 #### 🔸Projeto desenvolvido com base no vídeo https://www.youtube.com/watch?v=_HEIqE_qqbQ

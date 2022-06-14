@@ -3,7 +3,8 @@
 - Mini projeto CRUD desenvolvido em JavaScript utilizando o localStorage como banco de dados
 
 ![image](https://user-images.githubusercontent.com/95694730/173660291-ba71381c-25e8-47bb-82a6-3443f1e8313a.png)
-<br>
+
+<br><br>
 
 ## ✅ Funcionalidades
 ### 🔸 Adicione usuários
@@ -15,6 +16,7 @@
 
 - Aperte em "salvar"
 <img src="https://user-images.githubusercontent.com/95694730/173661195-15be080a-fa11-4b78-a0fa-454826c04f6d.png" alt="adicionando usuário" style="width: 600px;">
+
 <br><br>
 
 ## 🔸 Remova ou mude dados de usuários já cadastrados
@@ -24,6 +26,7 @@
 - Aperte em "excluir" para eliminar o usuário cadastrado
 <img src="https://user-images.githubusercontent.com/95694730/173663383-06c40690-0a47-4641-95d5-48fb2bb80f7d.png" alt="adicionando usuário" style="width: 600px;">
 
-<br><br>
+<br>
 
-🔸 Projeto desenvolvido com base no vídeo https://www.youtube.com/watch?v=_HEIqE_qqbQ
+#### 🔸Acesse o projeto <a href="https://gabiediasalves.github.io/Customer-Registration-CRUD/">clicando aqui</a>
+#### 🔸Projeto desenvolvido com base no vídeo https://www.youtube.com/watch?v=_HEIqE_qqbQ
